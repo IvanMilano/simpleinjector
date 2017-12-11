@@ -1,0 +1,15 @@
+﻿@model IEnumerable<int>
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<h4>Some random numbers from the wrapper class</h4>
+<ul>
+    @foreach (var number in Model)
+    {
+        <li>@number</li>
+    }
+</ul>
